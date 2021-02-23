@@ -293,11 +293,11 @@ head -n 20 则表示在前面的查询结果里再查前20条记录
 vi filename 查看或编辑文件
 
 查找文件内容关键字方法：
-先执行命令>： vi filename
-然后输入>:    /查找字符串 
-按n查找下一个
+1 先执行命令>： vi filename
+2 然后输入>:    /查找字符串 
+3 按n查找下一个
 
-例如1 查找nohup.out日志文件的error关键字
+例如1  查找nohup.out日志文件的error关键字
 执行命令：vi  nohup.out
 输入以下回车：/error
 按n查找下一个
@@ -305,6 +305,14 @@ vi filename 查看或编辑文件
 例如2 将实时日志打印到指定文件
 将实时日志打印到文件newlog.log内，方便查找
 执行命令：tail  -f  nohup.out   >newlog.log
+
 备注：newlog.log文件可以不存在，命令执行时会自动新建
 ```
 
+
+
+> > #替换每一行中所有 name 为 title
+>
+> :%s/name/title/g 
+>
+> > #等同于 :g/name/s//title/g
