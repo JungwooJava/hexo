@@ -98,13 +98,13 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yilia
+theme: hexo-theme-Kaze
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/JungwooJava/JungwooJava.github.io.git
+  repo: git@gitee.com:JungwooJava/JungwooJava.git
   branch: master
 
 jsonContent:
